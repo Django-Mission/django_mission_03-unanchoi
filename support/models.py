@@ -34,10 +34,12 @@ class Inquiry(models.Model):
         ("User" , "User"),
         ("Etc" , "Etc")
     ]
- 
-    title = models.CharField(verbose_name ="작성자", max_length=20)
+    
+    email = models.EmailField(verbose_name="email")
+    title = models.CharField(verbose_name ="제목", max_length=20)
     writer = models.CharField(verbose_name ="작성자", max_length=20)
     category = models.CharField(verbose_name="종류",
     max_length=20,
     choices=choice_options)
-    created_at = models.DateTimeField(created_at)
+    created_at = models.DateTimeField(auto_now=True)
+    number = models.TextField(verbose_name="전화번호")
