@@ -11,12 +11,15 @@ class AnswerInline(admin.TabularInline):
     max_num = 5
     verbose_name = '답변'
     verbose_name_plural = '답변'
+
+
+
 @admin.register(Faq)
 class FaqModelAdmin(admin.ModelAdmin):
     list_display = ('id', 'title', 'category', 'edited_at')
 
     search_fields = ('id', 'title')
-    list_filter = ('category')
+    list_filter = ('category',)
 
 
 @admin.register(Inquiry)

@@ -25,3 +25,8 @@
 ### 힌트
 
 - 관리자 옵션 공식문서 : [https://docs.djangoproject.com/en/4.0/ref/contrib/admin/#modeladmin-options](https://docs.djangoproject.com/en/4.0/ref/contrib/admin/#modeladmin-options)
+
+### 결과 캡처화면
+  <img src="screenshot.png">
+  <img src="screenshot2.png>
+ 
